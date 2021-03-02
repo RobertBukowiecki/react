@@ -4,10 +4,7 @@ import './styles/global.scss';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
 
-
-dasdasdjlnafs; 
-
-sdadsa;
+const test = 1;
 
 ReactDOM.render(<App />, document.getElementById('app'));
 
