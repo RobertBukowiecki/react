@@ -5,7 +5,9 @@ import ReactDOM from 'react-dom';
 import App from './components/App/App';
 
 
-dasdasdjlnafs lkdmsalkdm s sadmlk dsa
+dasdasdjlnafs; 
+
+sdadsa;
 
 ReactDOM.render(<App />, document.getElementById('app'));
 
