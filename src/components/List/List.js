@@ -21,6 +21,7 @@ class List extends React.Component {
   };
 
   addColumn(title) {
+    console.log("columna dodana", this.state);
     this.setState((state) => ({
       columns: [
         ...state.columns,

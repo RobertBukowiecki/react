@@ -20,7 +20,7 @@ class Column extends React.Component {
   };
 
   addCard(title) {
-    console.log("card added");
+    console.log("card added", this.state);
     this.setState((state) => ({
       cards: [
         ...state.cards,
@@ -28,7 +28,7 @@ class Column extends React.Component {
           key: state.cards.length
             ? state.cards[state.cards.length - 1].key + 1
             : 0,
-          title,
+          title: title,
         },
       ],
     }));
@@ -45,8 +45,8 @@ class Column extends React.Component {
           {this.props.title}
         </h3>
         <div className={styles.cards}>
-          {this.props.cards.map((card) => (
-            <Card key={card.id} {...card} />
+          {this.state.cards.map(({ key, ...cardProps }) => (
+            <Card key={key} {...cardProps} />
           ))}
         </div>
         <div className={styles.creator}>
