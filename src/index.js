@@ -4,7 +4,8 @@ import './styles/global.scss';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
 
-const test = '1';
+
+dasdasdjlnafs lkdmsalkdm s sadmlk dsa
 
 ReactDOM.render(<App />, document.getElementById('app'));
 
