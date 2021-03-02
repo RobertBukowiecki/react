@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./Column.scss";
-import PropTypes from "prop-types";
-import Card from "../Card/Card.js";
-import Icon from "../Icon/Icon";
-import { settings } from "../../data/dataStore";
-import Creator from "../Creator/Creator";
+import React from 'react';
+import styles from './Column.scss';
+import PropTypes from 'prop-types';
+import Card from '../Card/Card.js';
+import Icon from '../Icon/Icon';
+import { settings } from '../../data/dataStore';
+import Creator from '../Creator/Creator';
 
 class Column extends React.Component {
   state = {
@@ -20,7 +20,7 @@ class Column extends React.Component {
   };
 
   addCard(title) {
-    console.log("card added", this.state);
+    console.log('card added', this.state);
     this.setState((state) => ({
       cards: [
         ...state.cards,
@@ -35,7 +35,7 @@ class Column extends React.Component {
   }
 
   render() {
-    console.log("propsy", this.props);
+    console.log('propsy', this.props);
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>

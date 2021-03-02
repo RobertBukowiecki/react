@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./Creator.scss";
-import Button from "../Button/Button";
-import PropTypes from "prop-types";
+import React from 'react';
+import styles from './Creator.scss';
+import Button from '../Button/Button';
+import PropTypes from 'prop-types';
 
 class Creator extends React.Component {
   static propTypes = {
@@ -10,11 +10,11 @@ class Creator extends React.Component {
   };
 
   static defaultProps = {
-    text: "Add new item",
+    text: 'Add new item',
   };
 
   state = {
-    value: "",
+    value: '',
     visibleButtons: false,
   };
 
@@ -27,10 +27,10 @@ class Creator extends React.Component {
   };
 
   handleOK = () => {
-    if (this.state.value != "") {
+    if (this.state.value != '') {
       this.props.action(this.state.value);
       this.setState({
-        value: "",
+        value: '',
         visibleButtons: false,
       });
     }
@@ -38,7 +38,7 @@ class Creator extends React.Component {
 
   handleCancel = () => {
     this.setState({
-      value: "",
+      value: '',
       visibleButtons: false,
     });
   };
@@ -55,7 +55,7 @@ class Creator extends React.Component {
         <div
           className={
             styles.buttons +
-            (this.state.visibleButtons ? " " + styles.buttonsShown : "")
+            (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')
           }
         >
           <Button onClick={this.handleOK}>OK</Button>

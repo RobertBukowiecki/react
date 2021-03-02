@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Card.scss";
-import PropTypes from "prop-types";
+import React from 'react';
+import styles from './Card.scss';
+import PropTypes from 'prop-types';
 
 class Card extends React.Component {
   static propTypes = {
@@ -13,7 +13,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <section className={styles.component}>
+      <section>
         <p className={styles.component}>{this.props.title}</p>
       </section>
     );
