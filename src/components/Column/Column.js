@@ -7,12 +7,32 @@ import { settings } from "../../data/dataStore";
 import Creator from "../Creator/Creator";
 
 class Column extends React.Component {
+  state = {
+    cards: this.props.cards || [],
+  };
+
   static propTypes = {
     title: PropTypes.string,
     cards: PropTypes.array,
     icon: PropTypes.string,
     addCards: PropTypes.func,
+    id: PropTypes.string,
   };
+
+  addCard(title) {
+    console.log("card added");
+    this.setState((state) => ({
+      cards: [
+        ...state.cards,
+        {
+          key: state.cards.length
+            ? state.cards[state.cards.length - 1].key + 1
+            : 0,
+          title,
+        },
+      ],
+    }));
+  }
 
   render() {
     console.log("propsy", this.props);
@@ -32,7 +52,7 @@ class Column extends React.Component {
         <div className={styles.creator}>
           <Creator
             text={settings.cardCreatorText}
-            action={(title) => this.addCards(title)}
+            action={(title) => this.addCard(title)}
           />
         </div>
       </section>

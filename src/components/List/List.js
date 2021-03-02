@@ -29,7 +29,6 @@ class List extends React.Component {
             ? state.columns[state.columns.length - 1].key + 1
             : 0,
           title,
-          icon: "list-alt",
           cards: [],
         },
       ],
