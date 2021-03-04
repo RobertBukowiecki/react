@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Icon from '../Icon/Icon';
 import { settings } from '../../data/dataStore';
-// import Creator from '../Creator/Creator';
+import Creator from '../Creator/Creator';
 
 class Column extends React.Component {
 
@@ -12,13 +12,17 @@ class Column extends React.Component {
     title: PropTypes.string,
     cards: PropTypes.array,
     icon: PropTypes.string,
-    addCards: PropTypes.func,
+    addCard: PropTypes.func,
     id: PropTypes.string,
   };
 
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
+  }
+
 
   render() {
-    const {cards} = this.props;
+    const {cards, addCard} = this.props;
     console.log('propsy', this.props);
     const {title, icon} = this.props;
     return (
@@ -29,17 +33,17 @@ class Column extends React.Component {
           </span>
           {title}
         </h3>
-        {<div className={styles.cards}>
+        <div className={styles.cards}>
           {cards.map(cardData => (
             <Card key={cardData.id} {...cardData} />
           ))}
         </div>
-        /* <div className={styles.creator}>
+        <div className={styles.creator}>
           <Creator
             text={settings.cardCreatorText}
-            action={(title) => this.addCard(title)}
+            action={addCard}
           />
-        </div> */}
+        </div>
       </section>
     );
   }
