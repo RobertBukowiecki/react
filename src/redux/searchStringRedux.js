@@ -12,6 +12,7 @@ export const countVisibleCards = ({cards, searchString}) => cards.filter(card =>
 
 const reducerName = 'searchString';
 const createActionName = name => `app/${reducerName}/${name}`;
+
 // actions types
 
 export const SEARCH_STRING = createActionName('SEARCH_STRING');
