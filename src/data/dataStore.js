@@ -10,6 +10,7 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  defaultHeaderIcon: 'paw',
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
@@ -149,3 +150,20 @@ const initialStoreData = {
 };
 
 export default initialStoreData;
+
+export const info = {
+  title: 'Info',
+  image: 'https://images.pexels.com/photos/42415/pexels-photo-42415.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+};
+
+export const faq = {
+  title: 'FAQ',
+  image: 'https://images.pexels.com/photos/2789781/pexels-photo-2789781.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  text: 'niam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+};
+
+export const header = {
+  icon: 'paw',
+};
+
