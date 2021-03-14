@@ -80,6 +80,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Shopping list',
+    description: 'Do not forget while shopping',
+    image: 'https://image.freepik.com/free-vector/online-shopping-icon-set-banner-with-smartphone_37225-372.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Meetings',
+    description: 'Remeber about <sup>that!</sup>',
+    image: 'https://library.kissclipart.com/20190320/ew/kissclipart-meeting-agenda-minutes-clip-art-computer-icons-3b2ba94e193d4746.png',
+  },
 ];
 
 const columns = [
